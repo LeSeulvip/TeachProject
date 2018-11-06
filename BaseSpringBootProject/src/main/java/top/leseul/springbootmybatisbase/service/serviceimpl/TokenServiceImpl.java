@@ -61,7 +61,7 @@ public class TokenServiceImpl implements TokenService {
   @Override
   public int deleteTokens() throws Exception {
     //先删除tokenInfo
-    tbTokenInfoDAO.deleteTbTokenInfos();
+    tbTokenInfoDAO.deleteTokenInfos();
     //在删除token
     return tbTokenDAO.deleteTokens();
   }

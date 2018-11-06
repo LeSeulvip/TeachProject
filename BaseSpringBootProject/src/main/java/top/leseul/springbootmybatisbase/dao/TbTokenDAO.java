@@ -7,13 +7,14 @@ import top.leseul.springbootmybatisbase.entity.TbToken;
 /**
  * TbToken表的dao
  * 
- * @author leseul
+ * @author DarkKnight
  *
  */
 @Mapper
 public interface TbTokenDAO {
+
   /**
-   * -查询toeken
+   * -查询token
    * 
    * @param token
    * @return
@@ -40,28 +41,11 @@ public interface TbTokenDAO {
   int updateToken(TbToken token) throws Exception;
 
   /**
-   * -删除过期token
+   * -删除所有过期token
    * 
-   * @param token
    * @return
    * @throws Exception
    */
   int deleteTokens() throws Exception;
 
-  /**
-   * -用户上线登录
-   * 
-   * @return
-   * @throws Exception
-   */
-  int userLogin(TbToken token) throws Exception;
-
-  /**
-   * -用户注销
-   * 
-   * @param token
-   * @return
-   * @throws Exception
-   */
-  int userLogout(TbToken token) throws Exception;
 }

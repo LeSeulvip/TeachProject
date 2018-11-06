@@ -11,20 +11,18 @@ import top.leseul.springbootmybatisbase.utils.JsonMessage;
 /**
  * -用户信息控制器
  * 
- * @author leseul
+ * @author DarkKnight
  *
  */
-
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
   @Autowired
   private UserService userService;
 
   @RequestMapping("/login")
   public JsonMessage login(UserModel model) throws Exception {
-    // /user/login {"user.username":"","user.password":"test-pwd"}
+    // /user/login {"user.username":"test","user.password":"test-pwd"}
     return userService.login(model);
   }
 
@@ -36,7 +34,8 @@ public class UserController {
 
   @RequestMapping("/getUserInfo")
   public JsonMessage getUserInfo(UserModel model) throws Exception {
-    //  /user/getUserInfo {}
+    // /user/getUserInfo {}
     return userService.getUserInfo(model);
   }
+
 }

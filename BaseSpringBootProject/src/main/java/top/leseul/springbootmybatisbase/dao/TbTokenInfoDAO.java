@@ -7,7 +7,7 @@ import top.leseul.springbootmybatisbase.entity.TbTokenInfo;
 /**
  * TbTokenInfo的DAO
  * 
- * @author leseul
+ * @author DarkKnight
  *
  */
 @Mapper
@@ -18,10 +18,10 @@ public interface TbTokenInfoDAO {
    * @return
    * @throws Exception
    */
-  int deleteTbTokenInfos() throws Exception;
+  int deleteTokenInfos() throws Exception;
 
   /**
-   * - 添加图片校验码
+   * -添加图片校验码
    * 
    * @param tokenInfo
    * @return
@@ -55,5 +55,41 @@ public interface TbTokenInfoDAO {
    * @throws Exception
    */
   int deleteImageCode(TbTokenInfo tokenInfo) throws Exception;
+
+  /**
+   * -添加用户
+   * 
+   * @param tokenInfo
+   * @return
+   * @throws Exception
+   */
+  int addUser(TbTokenInfo tokenInfo) throws Exception;
+
+  /**
+   * -查询用户
+   * 
+   * @param tokenInfo
+   * @return
+   * @throws Exception
+   */
+  TbTokenInfo queryUser(TbTokenInfo tokenInfo) throws Exception;
+
+  /**
+   * -更新用户
+   * 
+   * @param tokenInfo
+   * @return
+   * @throws Exception
+   */
+  int updateUser(TbTokenInfo tokenInfo) throws Exception;
+
+  /**
+   * -删除用户
+   * 
+   * @param tokenInfo
+   * @return
+   * @throws Exception
+   */
+  int deleteUser(TbTokenInfo tokenInfo) throws Exception;
 
 }
