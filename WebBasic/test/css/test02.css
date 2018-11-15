@@ -1,0 +1,9 @@
+.test01 .main {
+  width: 800px;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.test01:hover.main {
+  color: red;
+}
