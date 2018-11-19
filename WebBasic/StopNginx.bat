@@ -1,4 +1,4 @@
-set PATH=C:\Develop\runtimes\nginx-1.14.0;%PATH%
+set PATH=C:\MyDevelop\runtimes\nginx-1.14.1;%PATH%
 rem %~dp0 is current dir 
 set BASE_DIR=%~dp0
 cd nginx

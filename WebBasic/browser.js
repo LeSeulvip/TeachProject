@@ -5,7 +5,7 @@
  * 所以要将执行文件路径放置在引号中,空格后面是传递给浏览器要打开的网址
  */
 const browser =
-  '"C:\\software\\UCBrowser\\Application\\UCBrowser.exe" http://127.0.0.1:30000';
+  '"C:\\Program Files (x86)\\UCBrowser\\Application\\UCBrowser.exe" http://127.0.0.1:30000';
 /* nodejs调用外面程序 */
 const exec = require('child_process').exec;
 exec(browser, function(error) {
