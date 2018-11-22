@@ -1,3 +1,4 @@
+/* login.css */
 html,
 body,
 .h100 {
@@ -9,40 +10,37 @@ body {
   background-image: url('../images/bg.jpg');
   background-size: cover;
   color: #ffffff;
-  /*rem是css3新增计量单位,表示浏览器基准字体大小的缩放倍数*/
+  /* rem是css3新增计量单位，表示浏览器基准字体大小的缩放倍数 */
   font-size: 2.5rem;
 }
 
 .div-main {
-  /*压力布局*/
+  /* 压力布局 */
   display: flex;
-  /*水平对齐居中*/
+  /* 水平对齐居中 */
   justify-content: center;
-  /*垂直对齐居中*/
+  /* 垂直对齐居中（要有高度） */
   align-items: center;
 }
+
 .div-login {
   padding: 30px;
-  width: 30%;
+  width: 20%;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 40px #ffffff;
 }
 
 .div-login input {
   background-color: rgba(255, 255, 255, 0.1);
   outline: none;
-  /*font-size: 1.8rem;*/
+  font-size: 1.8rem;
   color: #ffffff;
 }
-
-/*.div-login .input-group-addon {
-  font-size: 2rem;
-}*/
-
-.div-login .title {
-  padding-bottom: 10px;
+.div-login .input-group-addon {
+  font-size: 1.8rem;
 }
 
-.div-login .password {
-  padding-top: 10px;
+.div-login .title {
+  padding-bottom: 20px;
 }

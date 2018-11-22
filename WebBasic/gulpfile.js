@@ -43,6 +43,7 @@ gulp.task('js-libs', function() {
   var jslibs = [];
   jslibs.push('node_modules/jquery/dist/jquery.min.js');
   jslibs.push('node_modules/bootstrap3/dist/js/bootstrap.min.js');
+  
   //管道操作的优点,多次流式操作,不用生成中间文件
   //将js文件通过concat合并成一个在复制到目标目录
   gulp
@@ -120,4 +121,3 @@ gulp.task('test-css', function() {
     .pipe(plumber.stop())
     .pipe(gulp.dest('test/build/'));
 });
- 
