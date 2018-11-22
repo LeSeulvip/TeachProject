@@ -1,5 +1,0 @@
-2018/11/22 08:25:59 [error] 7488#10496: *1 "C:\github\TeachProject\Angularjs-Study\nginx/../dist/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: 127.0.0.1, request: "GET / HTTP/1.1", host: "127.0.0.1:30000"
-2018/11/22 08:25:59 [error] 7488#10496: *1 CreateFile() "C:\github\TeachProject\Angularjs-Study\nginx/../dist/favicon.ico" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: 127.0.0.1, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:30000", referrer: "http://127.0.0.1:30000/"
-2018/11/22 08:26:01 [error] 7488#10496: *1 "C:\github\TeachProject\Angularjs-Study\nginx/../dist/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: 127.0.0.1, request: "GET / HTTP/1.1", host: "127.0.0.1:30000"
-2018/11/22 08:26:21 [error] 7488#10496: *1 "C:\github\TeachProject\Angularjs-Study\nginx/../dist/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: 127.0.0.1, request: "GET / HTTP/1.1", host: "127.0.0.1:30000"
-2018/11/22 08:26:51 [notice] 11512#7256: signal process started

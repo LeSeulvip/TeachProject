@@ -1,5 +1,0 @@
-127.0.0.1 - - [22/Nov/2018:08:25:59 +0800] "GET / HTTP/1.1" 404 199 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36"
-127.0.0.1 - - [22/Nov/2018:08:25:59 +0800] "GET /favicon.ico HTTP/1.1" 404 199 "http://127.0.0.1:30000/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36"
-127.0.0.1 - - [22/Nov/2018:08:26:01 +0800] "GET / HTTP/1.1" 404 199 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36"
-127.0.0.1 - - [22/Nov/2018:08:26:21 +0800] "GET / HTTP/1.1" 404 199 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36"
-127.0.0.1 - - [22/Nov/2018:08:26:55 +0800] "GET / HTTP/1.1" 200 245 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36"
