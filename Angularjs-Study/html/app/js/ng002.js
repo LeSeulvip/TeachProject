@@ -52,6 +52,7 @@
           $scope.addData = {};
         };
       }
+
     ]);
 
     //创建ng-app，名称为myapp,[]里面是模块依赖，ngSanitize是安全插件
@@ -67,6 +68,6 @@
     ]);
 
     //将myapp绑定documen,这一句等同于在body标签上面写 ng-app="myapp"
-    angular.bootstrap(document, ['myapp']);
+    angular.bootstrap(document, [window.myappname]);
   });
 })();
