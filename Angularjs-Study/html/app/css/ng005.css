@@ -1,55 +1,15 @@
-.myinc {
-  position: relative;
-}
-.myani {
-  left: 0px;
-}
-
-.myani.ng-enter {
-  position: absolute;
-  width: 100%;
-  animation: myani-in 0.5s;
-}
-
-.myani.ng-leave {
-  position: absolute;
-  width: 100%;
-  animation: myani-out 0.5s;
+/* 
+  为了避免css冲突，将所有的样式都加上文件前缀
+  <div class="ng005-01">
+    ...
+    <span class="div-main"></span>
+  </div>
+ */
+ .ng005-01 .div-main {
+  width: 600px;
+  margin: 0px auto;
 }
 
-@keyframes myani-in {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
-@keyframes myani-out {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-.bg-primary,
-.bg-danger {
-  font-size: 2rem;
-}
-
-.bg-primary.ng-enter,
-.bg-danger.ng-enter {
-  animation: showfont 0.5s;
-}
-
-@keyframes showfont {
-  0% {
-    font-size: 2rem;
-  }
-  100% {
-    font-size: 1rem;
-  }
+.ng005-01 .selected-label {
+  box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.3);
 }
