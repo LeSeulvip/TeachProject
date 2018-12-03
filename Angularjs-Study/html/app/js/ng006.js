@@ -42,5 +42,26 @@ angular.element(document).ready(function() {
         $scope.result = data;
       });
     };
+
+    //图片校验码
+    $scope.changeImage = function() {
+      var token = DataService.getToken();
+      //token不存在就发起请求获取
+      if (!token) {
+        DataService.send('/', {}, function(data) {
+          $scope.imgcode = DataService.getValidateImage();
+        });
+        return;
+      }
+      $scope.imgcode = DataService.getValidateImage();
+    };
+
+    $scope.changeImage();
+
+    $scope.doImgCheck = function() {
+      DataService.send('/test/imageCode', { imageCode: $scope.checkimgcode }, function(data) {
+        $scope.result = data;
+      });
+    };
   }
 });
