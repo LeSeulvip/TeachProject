@@ -1,12 +1,6 @@
 angular.element(document).ready(function() {
   var ctrls = angular.module('controllers');
-  ctrls.controller('MyCtrl', [
-    '$scope',
-    '$log',
-    'TestService',
-    'DataService',
-    MyCtrl
-  ]);
+  ctrls.controller('MyCtrl', ['$scope', '$log', 'TestService', 'DataService', MyCtrl]);
 
   function MyCtrl($scope, $log, TestService, DataService) {
     $log.debug('in MyCtrl init.....');
@@ -32,8 +26,20 @@ angular.element(document).ready(function() {
 
     //登录
     $scope.login = function() {
-      DataService.send('/user/login',{user:$scope.formdata},function(data){
-        $scope.result=data;
+      DataService.send('/user/login', { user: $scope.formdata }, function(data) {
+        $scope.result = data;
+      });
+    };
+
+    $scope.getUserInfo = function() {
+      DataService.send('/user/getUserInfo', {}, function(data) {
+        $scope.result = data;
+      });
+    };
+
+    $scope.logout = function() {
+      DataService.send('/user/logout', {}, function(data) {
+        $scope.result = data;
       });
     };
   }

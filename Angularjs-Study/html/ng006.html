@@ -33,13 +33,22 @@
         <div class="form-group">
           <input type="password" ng-model="formdata.password" class="form-control" placeholder="请输入密码：">
         </div>
+        <div class="text-center">
+          <span class="btn btn-primary" ng-click="login();">登录</span>
+          <span class="btn btn-danger" ng-click="formdata={};">重填</span>
+        </div>
+        <hr>
+        <div class="text-center">
+          <span class="btn btn-primary" ng-click="getUserInfo();">获取用户信息</span>
+          <span class="btn btn-primary" ng-click="logout();">安全退出</span>
+        </div>
       </div>
-      <div class="text-center">
-        <span class="btn btn-primary" ng-click="login();">登录</span>
-        <span class="btn btn-danger" ng-click="formdata={};">重填</span>
+      <hr>
+      <div>
+        
       </div>
-
-    </div>
+      </div>
+    
 
     <script src="lib/js/jquery.min.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
