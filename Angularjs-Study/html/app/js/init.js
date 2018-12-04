@@ -5,21 +5,23 @@
   window.myappname = 'myapp';
 
   //ng和jq不冲突，可以使用jq检测文档加载
-
-  $(function() {
+  angular.element(document).ready(function() {
     //ng初始化控制器模块
     angular.module('controllers', []);
     //ng初始化服务模块
     angular.module('services', []);
+    //ng初始化指令服务
+    angular.module('directives', []);
 
     //初始化app
     var app = angular.module(window.myappname, [
       'ngSanitize',
       'ngAnimate',
-      // 'ngRoute',
       'ngMessages',
       'controllers',
-      'services'
+      'services',
+      'directives'
+
     ]);
 
     //配置日志是否开启debug
@@ -43,8 +45,7 @@
       '$httpProvider',
       function($httpProvider) {
         /* post提交可以使用json数据 */
-        $httpProvider.defaults.headers.post['Content-Type'] =
-          'application/x-www-form-urlencoded;charset=utf-8';
+        $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
         var parseParams = function(params) {
           // 参数处理
           var query = '',
@@ -74,11 +75,7 @@
                 query += parseParams(innerObj) + '&';
               }
             } else if (value !== undefined && value !== null) {
-              query +=
-                encodeURIComponent(name) +
-                '=' +
-                encodeURIComponent(value) +
-                '&';
+              query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';
             }
           }
           var querydata = query;

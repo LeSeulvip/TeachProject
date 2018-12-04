@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>常用服务</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div ng-controller="MyCtrl">
+      <span class="btn btn-primary" ng-click="cancelHideDiv()">取消延时消失</span>
+      <div ng-if="showDiv">延时消失</div>
+
+      <div><span>当前时间：</span> <span ng-bind="nowtime"></span></div>
+
+      <div><span class="btn btn-primary" ng-click="changeLocation()">更改地址</span> location信息：<span ng-bind="locInfo"></span></div>
+      <hr />
+      <div>
+        <ul class="nav nav-tabs">
+          <li role="presentation" ng-class="{true:'active'}[tab==1]">
+            <a href="javascript:void(0);" ng-click="tab=1"> 首页</a>
+          </li>
+          <li role="presentation" ng-class="{true:'active'}[tab==2]">
+            <a href="javascript:void(0);" ng-click="tab=2">springboot</a>
+          </li>
+          <li role="presentation" ng-class="{true:'active'}[tab==3]">
+            <a href="javascript:void(0);" ng-click="tab=3">angularjs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/angular.min.js"></script>
+    <script src="lib/js/angular-messages.min.js"></script>
+    <script src="lib/js/angular-animate.min.js"></script>
+    <script src="lib/js/angular-sanitize.min.js"></script>
+    <script src="app/js/init.js"></script>
+    <script src="app/js/ng008.js"></script>
+    <script src="app/js/startup.js"></script>
+  </body>
+</html>
