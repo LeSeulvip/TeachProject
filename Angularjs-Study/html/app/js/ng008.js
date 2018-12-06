@@ -79,11 +79,24 @@
       };
 
       //切换tab
+      //面板的数据（真正的项目中是来自数据库）
+      $scope.tabs = [
+        { id: 100, title: '首页', page: 'ng008-01.html' },
+        { id: 101, title: 'angularjs', page: 'ng008-02.html' },
+        { id: 102, title: 'springboot', page: 'ng008-03.html' }
+      ];
+
       $scope.changeTab = function(tab) {
-        $scope.tab = tab;
+        $log.debug(tab);
+        $scope.selectTab = tab;
       };
 
-      $scope.changeTab(1);
+      //通过url参数初始化tab
+      var urltab = $location.search().tab;
+      urltab = isNaN(urltab) ? 0 : parseInt(urltab);
+      urltab = urltab < 0 ? 0 : urltab;
+      urltab = urltab >= $scope.tabs.length ? $scope.tabs.length - 1 : urltab;
+      $scope.changeTab($scope.tabs[urltab]);
     }
   });
 })();
